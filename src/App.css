@@ -1,0 +1,97 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+.outerApp {
+  min-height: 100vh;
+  flex-grow: 1;
+  background-color: #223a5f;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 40px;
+}
+.first {
+  width: 80%;
+  border-style: solid;
+  border-color: white;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding-left: 40px;
+  overflow: hidden;
+}
+.firstChild1 {
+  color: white;
+}
+.firstChild2 {
+  height: auto;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-right: 60px;
+  padding-left: 60px;
+}
+.bottomDiv {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: auto;
+  flex-grow: 1;
+  background-color: blue;
+  width: 100%;
+}
+.innerBottomDiv {
+  height: 50%;
+  width: 50%;
+  background-color: white;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+.image {
+  width: 200px;
+  height: 200px;
+}
+.lowerDiv {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+}
+.popupContainer {
+  width: 50vw;
+  background-color: white;
+}
+.innerPopup1 {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+}
+.rulesImage {
+  width: 100%;
+}
+.resultFirst {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.scorePara {
+  font-family: Roboto;
+}
