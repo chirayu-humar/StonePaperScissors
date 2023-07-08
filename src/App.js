@@ -41,16 +41,18 @@ class App extends Component {
   userHaveChosen = event => {
     const {id} = event.currentTarget
     console.log(id)
-    const number = Math.floor(Math.random() * 3)
-    console.log(number)
-    let computerChoice = null
-    if (number === 1) {
-      computerChoice = 'ROCK'
-    } else if (number === 2) {
-      computerChoice = 'SCISSORS'
-    } else {
-      computerChoice = 'PAPER'
-    }
+    // const number = Math.floor(Math.random() * 3)
+    // console.log(number)
+    // let computerChoice = null
+    // if (number === 1) {
+    //   computerChoice = 'ROCK'
+    // } else if (number === 2) {
+    //   computerChoice = 'SCISSORS'
+    // } else {
+    //   computerChoice = 'PAPER'
+    // }
+    const getRandomChoice = choicesList[Math.floor(Math.random() * 3)]
+    const computerChoice = getRandomChoice.id
     console.log(computerChoice)
     const isUserWon =
       (id === 'ROCK' && computerChoice === 'SCISSORS') ||
